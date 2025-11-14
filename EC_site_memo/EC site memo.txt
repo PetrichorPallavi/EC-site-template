@@ -1,0 +1,38 @@
+CREATE TABLE products (
+    id INT PRIMARY KEY,
+    name VARCHAR(100),
+    price DOUBLE,
+    description TEXT,
+    stock INT,
+    img VARCHAR(255)
+);
+
+
+
+ALTER TABLE products MODIFY COLUMN id INT AUTO_INCREMENT;
+
+
+
+alter table products add DELETEUN VARCHAR(1) NOT NULL default 'Y';
+
+
+
+INSERT INTO products (id, name, price, description, stock, img) VALUES
+(1, 'Snake Plant', 15.99, 'Low-maintenance plant, ideal for indoor spaces.', 25, 'snake_plant.jpg'),
+(2, 'Monstera', 29.99, 'Tropical plant with iconic split leaves.', 18, 'monstera.jpg'),
+(3, 'Peace Lily', 19.50, 'Air-purifying plant with elegant white flowers.', 30, 'peace_lily.jpg'),
+(4, 'Succulent Mix', 12.00, 'Assorted succulents in a mini planter.', 50, 'succulent_mix.jpg'),
+(5, 'Spider Plant', 14.75, 'Great hanging plant with striped arching leaves.', 20, 'spider_plant.jpg'),
+(6, 'ZZ Plant', 22.99, 'Tough, glossy-leaf plant that survives neglect.', 15, 'zz_plant.jpg'),
+(7, 'Aloe Vera', 10.99, 'Medicinal plant, requires sunlight and minimal water.', 40, 'aloe_vera.jpg'),
+(8, 'Fiddle Leaf Fig', 34.99, 'Popular indoor tree with large violin-shaped leaves.', 10, 'fiddle_leaf_fig.jpg'),
+(9, 'Jade Plant', 13.99, 'Symbol of good luck, easy-care succulent.', 35, 'jade_plant.jpg'),
+(10, 'Pothos', 16.50, 'Trailing vine with heart-shaped leaves. Beginner-friendly.', 45, 'pothos.jpg');
+
+
+MySQL server frojm https://www.mysql.com/jp/products/connector/ 
+JDBC Driver for MySQL (Connector/J)-> download->orating system from dropdown=Platform Independence
+save MySQL connector in winllf folder????
+
+
+cart,login,header_navi,search,selet,style folder

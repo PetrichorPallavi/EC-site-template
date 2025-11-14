@@ -1,0 +1,24 @@
+CREATE TABLE user (
+       U_NO       VARCHAR(6)  NOT NULL    PRIMARY KEY,
+       U_NAME   VARCHAR(15)  NOT NULL,
+       U_ID    VARCHAR(15)  NOT NULL,
+       U_PW    VARCHAR(50)  NOT NULL,
+       U_BIRTH    VARCHAR(10)  NOT NULL,
+       U_EMAIL   VARCHAR(50)  NOT NULL,
+       U_PHONE    VARCHAR(13)  NOT NULL,
+       U_ADDR    VARCHAR(200)  NOT NULL,
+       U_GRADE   INT  NOT NULL,
+       U_DELETEUN  VARCHAR(1)  NOT NULL     
+);
+
+CREATE TABLE cart_items (
+    id          INT AUTO_INCREMENT PRIMARY KEY,
+    user_id     VARCHAR(50) NOT NULL,
+    product_id  INT NOT NULL,
+    quantity    INT NOT NULL,
+    created_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+UPDATE user
+SET U_DELETEUN = 'Y'
+WHERE U_DELETEUN = 'N';

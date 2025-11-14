@@ -1,0 +1,68 @@
+CREATE DATABASE ecsite
+CHARACTER SET utf8mb4
+COLLATE utf8mb4_unicode_ci;
+
+CREATE TABLE product (
+    id INT PRIMARY KEY,
+    name VARCHAR(100),
+    price DOUBLE,
+    description TEXT,
+    stock INT,
+    img VARCHAR(255)
+);
+
+ALTER TABLE product MODIFY COLUMN id INT AUTO_INCREMENT;
+
+CREATE TABLE user (
+       U_NO       VARCHAR(6)  NOT NULL    PRIMARY KEY,
+       U_NAME   VARCHAR(15)  NOT NULL,
+       U_ID    VARCHAR(15)  NOT NULL,
+       U_PW    VARCHAR(50)  NOT NULL,
+       U_BIRTH    VARCHAR(10)  NOT NULL,
+       U_EMAIL   VARCHAR(50)  NOT NULL,
+       U_PHONE    VARCHAR(13)  NOT NULL,
+       U_ADDR    VARCHAR(200)  NOT NULL,
+       U_GRADE   INT  NOT NULL,
+       U_DELETEUN  VARCHAR(1)  NOT NULL     
+);
+
+alter table product add DELETEUN VARCHAR(1) NOT NULL default 'Y';
+
+alter table product add U_NO varchar(6) NOT NULL;
+
+alter table products add type int(1) NOT NULL;
+
+CREATE TABLE orders (
+    id          INT AUTO_INCREMENT PRIMARY KEY,
+    name        VARCHAR(100),
+    price       DECIMAL(10,2),
+    quantity    INT,
+    totalPrice  DECIMAL(10,2),
+    img         VARCHAR(255),
+    IDs         VARCHAR(50)
+);
+
+CREATE TABLE cart_items (
+    id          INT AUTO_INCREMENT PRIMARY KEY,
+    user_id     VARCHAR(50) NOT NULL,
+    product_id  INT NOT NULL,
+    quantity    INT NOT NULL,
+    created_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE chat_room (
+    room_id INT AUTO_INCREMENT PRIMARY KEY,
+    product_id INT NOT NULL,
+    buyer_id VARCHAR(100) NOT NULL,
+    seller_id VARCHAR(100) NOT NULL,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+
+CREATE TABLE chat_message (
+    message_id INT AUTO_INCREMENT PRIMARY KEY,
+    room_id INT NOT NULL,
+    sender_id VARCHAR(100) NOT NULL,
+    message TEXT NOT NULL,
+    sent_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);

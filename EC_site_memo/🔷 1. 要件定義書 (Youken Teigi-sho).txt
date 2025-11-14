@@ -1,0 +1,74 @@
+🔷 1. 要件定義書 (Youken Teigi-sho)
+English: Requirements Specification Document
+Definition:
+Details what the system must do from the client's perspective. Includes business goals, use cases, user needs, and constraints.
+
+🔷 2. 業務フロー (Gyōmu Furō)
+English: Business Flow Diagram
+Definition:
+A visual representation (flowchart) of how business processes work. Shows how users interact with the system in daily operations.
+
+🔷 3. 機能一覧 (Kinō Ichiran)
+English: Function List
+Definition:
+A list of all required features and functions the system must support, usually grouped by modules or user roles.
+
+🔷 4. 画面遷移図 (Gamen Sen’i-zu)
+English: Screen Transition Diagram
+Definition:
+A map showing the navigation between screens/pages (UI flow). Helps visualize the user experience and system behavior.
+
+🔷 5. 画面設計書 / 画面定義書 (Gamen Sekkei-sho / Teigi-sho)
+English: Screen Design Document / Screen Definition Sheet
+Definition:
+Defines the layout, input fields, buttons, validation rules, and messages for each screen. Includes wireframes or mockups.
+
+🔷 6. データ項目定義書 (Dēta Kōmoku Teigi-sho)
+English: Data Item Definition Sheet
+Definition:
+Lists all data items (fields), their types, constraints, and usage. Often used as the basis for DB design.
+
+🔷 7. ER図 (ER-zu)
+English: Entity-Relationship Diagram
+Definition:
+A visual representation of database structure: tables, columns, relationships (1:N, N:M), and keys.
+
+🔷 8. 基本設計書 (Kihon Sekkei-sho)
+English: Basic Design Document
+Definition:
+Describes how the system should behave from an external perspective. Includes screen specs, input/output formats, API outlines, etc.
+
+🔷 9. 詳細設計書 (Shousai Sekkei-sho)
+English: Detailed Design Document
+Definition:
+Describes how each module or function will be implemented internally. Includes logic, algorithms, DB access, and class design.
+
+🔷 10. プログラム設計書 (Program Sekkei-sho)
+English: Program Design Document
+Definition:
+A lower-level technical document for developers. Contains pseudocode, flowcharts, variable definitions, and interface specs.
+
+🔷 11. テスト仕様書 (Test Shiyou-sho)
+English: Test Specification Document
+Definition:
+Defines test cases, test data, expected results, and steps for validation. Covers unit, integration, system, and acceptance testing.
+
+🔷 12. 移行計画書 (Ikou Keikaku-sho)
+English: Migration Plan
+Definition:
+Describes how data, services, and users will move from the old system to the new one. Includes backup, rollback, and schedule.
+
+🔷 13. 運用設計書 (Unyou Sekkei-sho)
+English: Operation Design Document
+Definition:
+Details how the system will be operated and maintained. Includes user roles, monitoring, error handling, and job schedules.
+
+🔷 14. 保守設計書 (Hoshu Sekkei-sho)
+English: Maintenance Plan / Document
+Definition:
+Covers how issues will be handled post-release, including versioning, bug tracking, and support workflows.
+
+🔷 15. マニュアル (操作説明書)
+English: User Manual / Operation Manual
+Definition:
+Explains how to use the system, often aimed at end users or administrators. Includes step-by-step instructions and screenshots
